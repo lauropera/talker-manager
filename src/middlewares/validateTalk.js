@@ -1,6 +1,6 @@
 function validateTalk(talkValue, res, value) {
   const HTTP_BAD_REQUEST_STATUS = 400;
-  if (!talkValue) {
+  if (talkValue === undefined) {
     return res
       .status(HTTP_BAD_REQUEST_STATUS)
       .json({ message: `O campo "${value}" é obrigatório` });
