@@ -7,11 +7,17 @@ async function readTalkerFile() {
   const path = resolve(__dirname, TALKER_FILE_PATH);
   try {
     const data = await fs.readFile(path);
-    const peopleList = JSON.parse(data);
-    return peopleList;
+    const personsList = JSON.parse(data);
+    return personsList;
   } catch (error) {
     console.error(`Error at reading file: ${error}`);
   }
 }
 
-module.exports = { readTalkerFile };
+async function findPersonById(personId) {
+  const personsList = await readTalkerFile();
+  const person = personsList.find(({ id }) => id === Number(personId));
+  return person;
+}
+
+module.exports = { readTalkerFile, findPersonById };
