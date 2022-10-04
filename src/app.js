@@ -5,6 +5,7 @@ const app = express();
 app.use(bodyParser.json());
 
 const talkerRoutes = require('./routes/talkerRoutes');
+const loginRoutes = require('./routes/loginRoutes');
 
 const HTTP_OK_STATUS = 200;
 
@@ -13,5 +14,7 @@ app.get('/', (_request, response) => {
 });
 
 app.use('/talker', talkerRoutes);
+
+app.use('/login', loginRoutes);
 
 module.exports = app;
