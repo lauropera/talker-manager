@@ -7,6 +7,7 @@ const {
   writeNewPerson,
   editPersonById,
   deletePersonById,
+  findPersonByName,
 } = require('../utils/fsUtils');
 
 const validateToken = require('../middlewares/validateToken');
@@ -24,6 +25,12 @@ const HTTP_NOT_FOUND_STATUS = 404;
 router.get('/', async (_req, res) => {
   const personsList = await readTalkerFile();
   res.status(HTTP_OK_STATUS).json(personsList);
+});
+
+router.get('/search', validateToken, async (req, res) => {
+  const { q } = req.query;
+  const filteredPersons = await findPersonByName(q);
+  res.status(HTTP_OK_STATUS).json(filteredPersons);
 });
 
 router.get('/:id', async (req, res) => {
