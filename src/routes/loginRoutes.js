@@ -3,12 +3,12 @@ const generateToken = require('../utils/generateToken');
 
 const router = express.Router();
 
-const emailValidation = require('../middlewares/emailValidation');
-const passwordValidation = require('../middlewares/passwordValidation');
+const validateEmail = require('../middlewares/validateEmail');
+const validatePassword = require('../middlewares/validatePassword');
 
 const HTTP_OK_STATUS = 200;
 
-router.post('/', emailValidation, passwordValidation, (_req, res) => {
+router.post('/', validateEmail, validatePassword, (_req, res) => {
   const token = generateToken();
   res.status(HTTP_OK_STATUS).json({ token });
 });
