@@ -83,7 +83,13 @@ git clone git@github.com:lauropera/talker-manager.git
   </br>
   • Traz todos os talkers (palestrantes) do banco de dados.
   </br>
-  • Valida o token - req.authorization.
+</details>
+
+<details>
+  <summary><strong>GET /talkers/search</strong></summary>
+  </br>
+  • Busca talkers pelo nome através da query "q".
+  </br>
 </details>
 
 <details>
@@ -91,7 +97,6 @@ git clone git@github.com:lauropera/talker-manager.git
   </br>
   • Traz um talker por id do banco de dados.
   </br>
-  • Valida o token - req.authorization.
 </details>
 
 <details>
