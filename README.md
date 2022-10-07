@@ -8,13 +8,18 @@ Nesse projeto foi desenvolvido uma API em CRUD (Create, Read, Update e Delete) p
 
 #
 
-## 📋 Execute o projeto em sua máquina
+## 📚 Documentação
 
+<details>
+<summary>Instalação e execução</summary>
+    <br />
+  
 Clone o repositório:
 
 ```
 git clone git@github.com:lauropera/talker-manager.git
 ```
+
 <details>
   <summary><strong>🐋 Rodando no Docker vs Localmente</strong></summary>
   
@@ -24,35 +29,35 @@ git clone git@github.com:lauropera/talker-manager.git
   - Esse serviço irá inicializar um container chamado `talker_manager`.
   - A partir daqui você pode rodar o container via CLI ou abri-lo no VS Code.
 
-  > Use o comando `docker exec -it talker_manager bash`.
-  - Ele te dará acesso ao terminal interativo do container criado pelo compose, que está rodando em segundo plano.
+> Use o comando `docker exec -it talker_manager bash`.
 
-  > Instale as dependências [**Caso existam**] com `npm install`
+- Ele te dará acesso ao terminal interativo do container criado pelo compose, que está rodando em segundo plano.
 
-  > Execute a aplicação com `npm start` ou `npm run dev`
+> Instale as dependências [**Caso existam**] com `npm install`
 
+> Execute a aplicação com `npm start` ou `npm run dev`
 
-  :eyes: **De olho na dica:** 
+:eyes: **De olho na dica:**
 
-  A extensão `Remote - Containers` do VS Code (que estará na seção de extensões recomendadas do programa) é indicada para que você possa desenvolver sua aplicação no container Docker direto no VS Code, como você faz com seus arquivos locais.
+A extensão `Remote - Containers` do VS Code (que estará na seção de extensões recomendadas do programa) é indicada para que você possa desenvolver sua aplicação no container Docker direto no VS Code, como você faz com seus arquivos locais.
 
-  ---
-  
-  ## Sem Docker
+---
 
-  > :information_source: Instale as dependências [**Caso existam**] com `npm install`
-  
-  - **:warning: Atenção:** Não rode o comando npm audit fix! Ele atualiza várias dependências do projeto, e essa atualização gera conflitos com o avaliador.
+## Sem Docker
 
-  - **✨ Dica:** Para rodar o projeto desta forma, obrigatoriamente você deve ter o `node` instalado em seu computador.
-  - **✨ Dica:** O avaliador espera que a versão do `node` utilizada seja a 16.
+> :information_source: Instale as dependências [**Caso existam**] com `npm install`
+
+- **:warning: Atenção:** Não rode o comando npm audit fix! Ele atualiza várias dependências do projeto, e essa atualização gera conflitos com o avaliador.
+
+- **✨ Dica:** Para rodar o projeto desta forma, obrigatoriamente você deve ter o `node` instalado em seu computador.
+- **✨ Dica:** O avaliador espera que a versão do `node` utilizada seja a 16.
 
   <br/>
 </details>
+</details>
+  <br />
 
-#
-
-## 👨🏻‍💻 Habilidades
+## 📜 Habilidades
 
 - Entender a diferença entre execução síncrona e assíncrona;
 - Realizar operações assíncronas com callbacks e Promises;
@@ -127,10 +132,10 @@ git clone git@github.com:lauropera/talker-manager.git
 
 ## ⚙️ Tecnologias
 
-* JavaScript
-* Node.js
-* Express.js
-* Docker
+- JavaScript
+- Node.js
+- Express.js
+- Docker
 
 ##
 
