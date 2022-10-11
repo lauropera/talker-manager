@@ -1,4 +1,4 @@
-function tokenValidation(req, res, next) {
+function validateToken(req, res, next) {
   const { authorization } = req.headers;
   const HTTP_UNAUTHORIZED_STATUS = 401;
 
@@ -16,4 +16,4 @@ function tokenValidation(req, res, next) {
   next();
 }
 
-module.exports = tokenValidation;
+module.exports = validateToken;

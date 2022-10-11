@@ -15,6 +15,7 @@ app.get('/', (_request, response) => {
 });
 
 app.use('/talker', talkerRoutes);
+
 app.use('/login', loginRoutes);
 
 app.use(errorHandle);

@@ -1,4 +1,4 @@
-function validateAge(req, res, next) {
+function validateRate(req, res, next) {
   const { rate } = req.body.talk;
   const HTTP_BAD_REQUEST_STATUS = 400;
 
@@ -11,4 +11,4 @@ function validateAge(req, res, next) {
   next();
 }
 
-module.exports = validateAge;
+module.exports = validateRate;

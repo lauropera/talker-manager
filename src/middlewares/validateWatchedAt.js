@@ -1,4 +1,4 @@
-function validateAge(req, res, next) {
+function validateWatchedAt(req, res, next) {
   const { watchedAt } = req.body.talk;
   const HTTP_BAD_REQUEST_STATUS = 400;
   const isFormatDate = /^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/i;
@@ -12,4 +12,4 @@ function validateAge(req, res, next) {
   next();
 }
 
-module.exports = validateAge;
+module.exports = validateWatchedAt;
