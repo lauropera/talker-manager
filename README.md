@@ -6,56 +6,40 @@ Projeto desenvolvido na <a href="https://betrybe.com/" target="_blank">Trybe</a>
 
 Nesse projeto foi desenvolvido uma API em CRUD (Create, Read, Update e Delete) para uma aplicação de cadastro de talkers (palestrantes), onde é possivel cadastrar, visualizar, pesquisar, editar e excluir informações. Foi utilizado também Express.js e middlewares.
 
-#
+<br />
 
-## 📚 Documentação
-
-<details>
-<summary>Instalação e execução</summary>
-    <br />
-  
-Clone o repositório:
-
-```
-git clone git@github.com:lauropera/talker-manager.git
-```
+## 🚀 Instalação e execução
 
 <details>
-  <summary><strong>🐋 Rodando no Docker vs Localmente</strong></summary>
-  
-  ## Com Docker
- 
-  > Rode o serviço `node` com o comando `docker-compose up -d`.
-  - Esse serviço irá inicializar um container chamado `talker_manager`.
-  - A partir daqui você pode rodar o container via CLI ou abri-lo no VS Code.
+<summary>Instalação e execução com Docker</summary>
+<br />
 
-> Use o comando `docker exec -it talker_manager bash`.
+Para rodar está aplicação é necessário ter **Git**, **Docker** e o **Docker Compose** instalados no seu computador. O Docker Compose precisa estar na versão **1.29** ou superior.
 
-- Ele te dará acesso ao terminal interativo do container criado pelo compose, que está rodando em segundo plano.
+### 1 - Clone o repositório:
 
-> Instale as dependências [**Caso existam**] com `npm install`
+```
+git clone git@github.com:lauropera/trybesmith.git
+```
 
-> Execute a aplicação com `npm start` ou `npm run dev`
+### 2 - Na raíz do projeto, suba os containers `talker_manager` utilizando o docker-compose.
 
-:eyes: **De olho na dica:**
+    docker-compose up -d --build
 
-A extensão `Remote - Containers` do VS Code (que estará na seção de extensões recomendadas do programa) é indicada para que você possa desenvolver sua aplicação no container Docker direto no VS Code, como você faz com seus arquivos locais.
+### 3 - Abra o terminal do container `talker_manager`.
 
----
+    docker exec -it talker_manager bash
 
-## Sem Docker
+### 4 - No terminal do container, instale as dependências com o comando:
 
-> :information_source: Instale as dependências [**Caso existam**] com `npm install`
+    npm install
 
-- **:warning: Atenção:** Não rode o comando npm audit fix! Ele atualiza várias dependências do projeto, e essa atualização gera conflitos com o avaliador.
+### 5 - Agora execute a aplicação com o comando:
 
-- **✨ Dica:** Para rodar o projeto desta forma, obrigatoriamente você deve ter o `node` instalado em seu computador.
-- **✨ Dica:** O avaliador espera que a versão do `node` utilizada seja a 16.
+    npm start
 
-  <br/>
 </details>
-</details>
-  <br />
+<br />
 
 ## 📜 Habilidades
 
@@ -69,7 +53,7 @@ A extensão `Remote - Containers` do VS Code (que estará na seção de extensõ
 - Criar rotas e aplicar middlewares;
 - Escrever APIs utilizando Node e Express.
 
-#
+<br />
 
 ## 🔎 Rotas
 
@@ -128,7 +112,7 @@ A extensão `Remote - Containers` do VS Code (que estará na seção de extensõ
   • Valida o token - req.authorization.
 </details>
 
-#
+<br />
 
 ## ⚙️ Tecnologias
 
